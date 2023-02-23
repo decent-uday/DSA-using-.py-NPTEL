@@ -1,0 +1,75 @@
+Week 1 Quiz
+The due date for submitting this assignment has passed.
+Due on 2023-02-08, 23:59 IST.
+Score: 7.5/10=75%
+
+Assignment submitted on 2023-01-30, 17:34 IST
+All questions carry equal weightage. All Python code is assumed to be executed using Python3. You may submit as many times as you like within the deadline. Your final submission will be graded.
+Note:
+
+If the question asks about a value of type string, remember to enclose your answer in single or double quotes.
+If the question asks about a value of type list, remember to enclose your answer in square brackets and use commas to separate list items.
+What is the value of f(2343) for the function below?
+def f(x):
+    d=0
+    y=1
+    while y <= x:
+        d=d+1
+        y=y*3
+    return(d)
+8
+Yes, the answer is correct.
+Score: 2.5
+Feedback:
+The function computes the number of digits required to write x in base 3.
+Accepted Answers:
+(Type: Numeric) 8
+2.5 points
+What is h(53)-h(52), given the definition of h below?
+def h(n):
+    s = 0
+    for i in range(1,n+1):
+        if n%i > 0:
+           s = s+1
+    return(s)
+5
+Yes, the answer is correct.
+Score: 2.5
+Feedback:
+h(n) counts the number of non-divisors of n from 1 to n. h(53) is 51, since 53 is a prime and has only 2 divisors {1,53}. h(52) is 46 since 52 has 6 divisors {1,2,4,13,26,52}.
+Accepted Answers:
+(Type: Numeric) 5
+2.5 points
+For what integer value n would g(92,n) return 13?
+def g(m,n):
+    res = 0
+    while m >= n:
+        res = res+1
+        m = m-n
+    return(res)
+7
+Yes, the answer is correct.
+Score: 2.5
+Feedback:
+The function computes the quotient m//n by repeated subtraction. 92//7 = 13.
+Accepted Answers:
+(Type: Numeric) 7
+2.5 points
+2.5 points
+Consider the following function mys:
+def mys(m):
+    if m == 1:
+        return(1)
+    else:
+        return(m*mys(m-1))
+
+Which of the following is correct, assuming we always pass an integer argument to mys?
+ The function always terminates with mys(n) = factorial of n
+ The function always terminates with mys(n) = 1+2+...+n
+ The function terminates for non-negative n with mys(n) = factorial of n
+ The function terminates for positive n with mys(n) = factorial of n
+No, the answer is incorrect.
+Score: 0
+Feedback:
+The function recursively computes m! provided m ≥ 1. If m ≤ 0, the recursive calls do not terminate.
+Accepted Answers:
